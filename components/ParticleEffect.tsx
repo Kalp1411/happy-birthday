@@ -48,7 +48,7 @@ export default function ParticleEffect() {
             repeat: Infinity,
             repeatType: 'loop',
             delay: i * 0.1,
-            easing: 'easeInOut',
+            ease: 'easeInOut',
           }}
         />
       ))}
