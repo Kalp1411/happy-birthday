@@ -30,7 +30,7 @@ export default function PhotoDisplay() {
             {!imageError ? (
               <div className="relative w-full h-full">
                 <Image
-                  src="/birthday-photo.webp"
+                  src="/birthday-photo.jpg"
                   alt="Birthday Person"
                   fill
                   className="object-cover"
