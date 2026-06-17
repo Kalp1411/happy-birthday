@@ -61,7 +61,7 @@ export default function PhotoDisplay() {
         {/* Floating Decorations */}
         <motion.div
           animate={{ rotate: 360 }}
-          transition={{ duration: 8, repeat: Infinity, linear: true }}
+          transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
           className="absolute -top-4 -right-4 text-4xl"
         >
           🎁
@@ -69,7 +69,7 @@ export default function PhotoDisplay() {
 
         <motion.div
           animate={{ rotate: -360 }}
-          transition={{ duration: 6, repeat: Infinity, linear: true }}
+          transition={{ duration: 6, repeat: Infinity, ease: 'linear' }}
           className="absolute -bottom-4 -left-4 text-4xl"
         >
           🎀
