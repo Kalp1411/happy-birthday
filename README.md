@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Happy Birthday Wishes - Next.js Project
 
-## Getting Started
+An amazing animated Happy Birthday Wishes page with confetti, balloons, cake animations, and interactive features!
 
-First, run the development server:
+## Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🎉 **Confetti Animation** - Toggle confetti on/off
+- 📸 **Photo Display** - Beautiful framed photo of the birthday person with animations
+- 🎈 **Floating Balloons** - Colorful animated balloons
+- 🎂 **Cake Animation** - Beautiful animated birthday cake with candles
+- 🎵 **Music Control** - Play/mute birthday music
+- ✨ **Particle Effects** - Decorative floating particles
+- ⭐ **Animated Stars** - Twinkling stars throughout the page
+- 📱 **Responsive Design** - Works on all devices
+- 💫 **Smooth Animations** - Powered by Framer Motion
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 16.2.9** with App Router
+- **TypeScript** for type safety
+- **Tailwind CSS** for styling
+- **Framer Motion** for animations
+- **React Confetti** for confetti effects
+- **React Icons** for UI icons
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## File Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+app/
+├── page.tsx              # Main birthday page
+├── layout.tsx            # Root layout
+└── globals.css           # Global styles
 
-## Deploy on Vercel
+components/
+├── BirthdayCard.tsx      # Flipping birthday card component
+├── CakeAnimation.tsx     # Animated cake with candles
+├── FloatingBalloons.tsx  # Floating balloons animation
+├── ParticleEffect.tsx    # Background particle effects
+└── PhotoDisplay.tsx      # Photo frame component with decorations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+public/
+├── birthday-music.mp3    # Birthday music (optional)
+└── birthday-photo.jpg    # Birthday person photo (JPG, PNG, or WebP)
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## CAdd Birthday Photo
+1. Add your photo to `public/birthday-photo.jpg`
+   - Supports JPG, PNG, or WebP formats
+   - Recommended size: 400x400px or larger
+   - The photo will be displayed in a beautiful animated frame with decorations
+
+### ustomization Guide
+
+### Change the Message
+Edit the title and subtitle in `app/page.tsx` (lines 80-82)
+
+### Add Birthday Music
+Place an MP3 file at `public/birthday-music.mp3` and click the "Play Music" button
+
+### Modify Colors
+- Main gradient: `app/page.tsx` line 54
+- Component colors: Individual component files
+- Tailwind classes can be adjusted throughout
+
+### Adjust Animation Speeds
+Modify the `duration` and `delay` values in Framer Motion components (measured in seconds)
+
+## Available Commands
+
+```bash
+npm run dev       # Development server
+npm run build     # Production build
+npm start         # Run production server
+npm run lint      # Check code quality
+```
+
+## Browser Support
+
+✅ Chrome/Edge  
+✅ Firefox  
+✅ Safari  
+✅ Mobile browsers
+
+## Deployment
+
+Deploy to Vercel:
+```bash
+npm run build
+vercel deploy
+```
+
+## Tips
+
+- All animations are GPU-accelerated for smooth performance
+- The page works offline (except music playback)
+- Confetti and animations are performance-optimized
+- Responsive design adapts to all screen sizes
+
+Enjoy celebrating! 🎉
+"# happy-birthday" 
